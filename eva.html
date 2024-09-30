@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+<body>
+    <form method="get" action="tableau.html">
+        <fieldset>
+            <legend>information personnelle</legend>
+            <label for="name">nom</label>
+            <input id="name"type="text"name="nom">
+            
+            
+            <label for="prenom">prenom</label>
+            <input id="prenom"type="text"name="prenom">
+
+            
+            <label for="age">age</label>
+            <input id="age"type="number"min="0"name="age">
+            
+
+            <label for="pays d'origine">pays d'origine</label>
+            <input id="pays d'origine"type="text"name="pays d'origine">
+            
+
+            <span>sex:</span>
+            <label for="homme">homme</label>
+            <input id ="homme"type="radio"name="sex"value="h">
+            <label for="femme">femme</label>
+            <input id="femme"type="radio"name="sex"value="f">
+        </fieldset>
+
+        <fieldset>
+            <legend> information professionnelles</legend>
+            <label for ="email" >email</label>
+            <input type="email"name="email"  id="email">
+
+            <label for="password">password</label>
+            <input type="password"name="password" id="password">s
+            
+            <select name="profession"id="profession">
+                <option value="etudiant">etudiant</option>
+                <option value="salarié">salarié</option>
+                <option value="menagere">menagere</option>
+                <option value="maçon">maçon</option>
+        </fieldset>
+        <input type="submit"value="submit">
+</form>
+    
+</body>
+</html>

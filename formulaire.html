@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulaire</title>
+</head>
+<body>
+    <form action="tableau" method="get">
+        <fieldset>
+            <legend>vos cordonnées</legend>
+            <label for name="nom">nom</label>
+            <input id ="name" type="text"name=nom placeholder="entrer votre nom">
+            <br>
+            <br>
+            <label for name="prenom" >prenon</label>
+            <input id="prenom"type="text"name=prenom placeholder="entrer votre prenoms">
+            <br>
+            <br>
+            <label for name="date de naissance">date de naissance</label>
+            <input id="date de naissance" min="0" type="numero"name=date de naissance placeholder="jj/mm/aaa">
+            <br>
+            <br>
+           <label for name="mail">mail</label>
+           <input id="mail"type="text"name="mail" placeholder="votre mail">
+           <br>
+           <br>
+           <label for name="code">code</label>
+           <input id="code"type="nuero"name=code>
+           <br>
+           <br>
+           <span>genre:</span>
+           <label for ="homme">homme</label>
+           <input id="homme" type="radio"name="genre"value="h">
+           <label for="femme">femme</label>
+           <input id="femme"type="radio"name="genre "value="f">
+           <br>
+           <br>
+           <select name="pays"id="pays">
+                <option value="cameroun">cameroun</option>
+                <option value="france">france</option>
+                <option value="nigeria">nigeria</option>
+                <option value="togo">togo</option>
+           </select>
+        </fieldset>
+
+        <fieldset> 
+            <legend> vos gout </legend>
+            <input id="gout1"type="checkbox" name=" tarte1">
+            <label for="gout1" >tarte au frraise a la creme d'armande</label>
+            <br>
+            <br>   
+            <input id=" gout2" type="checkbox" name="tarte2">         
+            <label for="gout2">tarte au prunes </label>
+            <br>
+            <br>
+            <input id="gout3"type="checkbox"name="tatre3">
+            <label for ="gout3">tarte rustique au mirabelles de lorraines, noisettes et miel</label>
+            <br>
+            <br>
+            <textarea id="text" rows="4" cols="40" placeholder="decrivez vos gout"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>envoyer nous votre photo</legend>
+
+            <input type="file" id="file" name="file">
+            <br>
+            <br>
+
+            <input type="reset"value="effacer">
+            <input type="submit" value="envoyer">
+
+
+            
+        </fieldset>
+    </form>
+    
+</body>
+</html>
